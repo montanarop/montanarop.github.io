@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROP Contractors - Building Your Dream Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="ROP Contractors Logo" class="logo">
+        <h1>ROP Contractors</h1>
+        <p>Building Your Dream Home</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h2>Welcome to ROP Contractors</h2>
+        <p>We specialize in making your dream home a reality.</p>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="images 1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="images 2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="images 3.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="images 4.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="images.jpg" style="width:100%">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>ROP Contractors has been building homes for over 20 years...</p>
+    </section>
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Custom Home Building</li>
+            <li>Home Renovations</li>
+            <li>Architectural Design</li>
+            <li>Project Management</li>
+            <li>General Contracting</li>
+            <li>Construction Management</li>
+            <li>Interior and Exterior Finishing</li>
+            <li>Landscaping and Outdoor 
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us to start your project:</p>
+        <ul>
+            <li>Email: <a href="mailto:ropbrian254@gmail.com">ropbrian254@gmail.com</a></li>
+            <li>Phone: 0721900173 / 0729323385</li>
+            <li>Facebook: <a href="https://facebook.com/brayo.montana" target="_blank">Brayo Montana</a></li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2025 ROP Contractors. All rights reserved.</p>
+    </footer>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+</html>
